@@ -32,7 +32,7 @@ TARGET_USES_LEGACY_ADB_INTERFACE :=true
 
 #HIDL
 PRODUCT_COPY_FILES += \
-    $(VENDOR_PATH)/manifest.xml:system/vendor/manifest.xml
+    $(VENDOR_PATH)/manifest.xml:vendor/manifest.xml
 
 # Fonts
 EXTENDED_FONT_FOOTPRINT := true
@@ -43,6 +43,7 @@ TARGET_QCOM_NO_FM_FIRMWARE := true
 BOARD_HAVE_QCOM_FM := true
 
 # Properties (reset them here, include more in device if needed)
+PRODUCT_COPY_FILES += $(VENDOR_PATH)/system.prop:vendor/system.prop
 TARGET_SYSTEM_PROP := $(VENDOR_PATH)/system.prop
 
 # SELinux
