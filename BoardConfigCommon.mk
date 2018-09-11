@@ -43,8 +43,8 @@ TARGET_QCOM_NO_FM_FIRMWARE := true
 BOARD_HAVE_QCOM_FM := true
 
 # Properties (reset them here, include more in device if needed)
-PRODUCT_COPY_FILES += $(VENDOR_PATH)/system.prop:vendor/system.prop
-TARGET_SYSTEM_PROP := $(VENDOR_PATH)/system.prop
+#PRODUCT_COPY_FILES += $(VENDOR_PATH)/system.prop:vendor/system.prop
+TARGET_VENDOR_PROP := $(VENDOR_PATH)/system.prop
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk

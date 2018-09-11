@@ -100,6 +100,9 @@ ro.telephony.call_ring.multiple=0
 # Subsystem
 persist.sys.ssr.enable_debug=0
 
+# Device was launched with KK
+ro.product.first_api_level=19
+
 # Sensors
 ro.qc.sdk.gestures.camera=false
 ro.qc.sdk.camera.facialproc=false

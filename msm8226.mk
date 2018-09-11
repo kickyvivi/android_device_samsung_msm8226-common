@@ -215,6 +215,15 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
     lights.MSM8226
 
+# VNDK
+PRODUCT_PACKAGES += \
+    vndk_sp
+
+# Healthd
+PRODUCT_PACKAGES += \
+    android.hardware.health@1.0-impl \
+    android.hardware.health@1.0-service
+
 # Wifi
 PRODUCT_PACKAGES += \
     dhcpcd.conf \
@@ -231,7 +240,7 @@ PRODUCT_PACKAGES += \
 
 # QC Perf
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.extension_library=/system/lib/libqc-opt.so
+    ro.vendor.extension_library=/vendor/lib/libqti-perf.so
 
 PRODUCT_PACKAGES += \
     libcurl \

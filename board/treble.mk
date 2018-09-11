@@ -1,0 +1,3 @@
+# Treble
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+BUILD_FINGERPRINT := "samsung/s3ve3gxx/s3ve3g:4.4.2/KOT49H/I9301IXXUANL1:user/release-keys"
