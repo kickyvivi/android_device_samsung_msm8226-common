@@ -196,6 +196,7 @@ PRODUCT_PACKAGES += \
 # Radio
 PRODUCT_PACKAGES += \
     libsecnativefeature
+    libril_shim
 
 # Ramdisk
 PRODUCT_PACKAGES += \
